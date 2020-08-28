@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import UserItem from "../UserItem/UserItem";
+import UserItem from '../UserItem/UserItem';
+import classes from './UserList.module.scss';
 
 const UserList = ({ items }) => {
   if (items.length === 0) {
@@ -12,15 +13,9 @@ const UserList = ({ items }) => {
   }
 
   return (
-    <ul className="users-list">
+    <ul className={classes['users-list']}>
       {items.map((user) => (
-        <UserItem
-          key={user.id}
-          id={user.id}
-          image={user.image}
-          name={user.name}
-          placeCount={user.places}
-        />
+        <UserItem key={user.id} id={user.id} image={user.image} name={user.name} placeCount={user.places} />
       ))}
     </ul>
   );
