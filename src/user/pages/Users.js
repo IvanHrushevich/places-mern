@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import UserList from "../components/UserList/UserList";
+import UserList from '../components/UserList/UserList';
 
 const Users = () => {
   const USERS = [
     {
       id: 1,
-      name: "Ivan",
-      image:
-        "https://www.pngitem.com/pimgs/m/22-220721_circled-user-male-type-user-colorful-icon-png.png",
+      name: 'Ivan',
+      image: 'https://www.pngitem.com/pimgs/m/22-220721_circled-user-male-type-user-colorful-icon-png.png',
       places: 3,
     },
   ];

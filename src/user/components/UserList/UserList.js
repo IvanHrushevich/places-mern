@@ -2,12 +2,15 @@ import React from 'react';
 
 import UserItem from '../UserItem/UserItem';
 import classes from './UserList.module.scss';
+import { Card } from '../../../shared/components';
 
 const UserList = ({ items }) => {
   if (items.length === 0) {
     return (
       <div className="center">
-        <h2>No users found</h2>
+        <Card>
+          <h2>No users found</h2>
+        </Card>
       </div>
     );
   }
