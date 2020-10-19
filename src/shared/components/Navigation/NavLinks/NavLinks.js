@@ -9,12 +9,18 @@ const NavLinks = () => (
       <NavLink activeClassName={classes.active} to="/" exact>
         ALL USERS
       </NavLink>
+    </li>
+    <li>
       <NavLink activeClassName={classes.active} to="/u1/places">
         MY PLACES
       </NavLink>
+    </li>
+    <li>
       <NavLink activeClassName={classes.active} to="/places/new">
         ADD PLACE
       </NavLink>
+    </li>
+    <li>
       <NavLink activeClassName={classes.active} to="/auth">
         AUTHENTICATE
       </NavLink>
