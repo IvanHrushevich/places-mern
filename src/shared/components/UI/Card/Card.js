@@ -2,10 +2,10 @@ import React from 'react';
 
 import classes from './Card.module.scss';
 
-const Card = ({ className, style, children }) => {
+const Card = (props) => {
   return (
-    <div className={`${classes.card} ${className}`} style={style}>
-      {children}
+    <div className={`${classes.card} ${props.className}`} style={props.style}>
+      {props.children}
     </div>
   );
 };

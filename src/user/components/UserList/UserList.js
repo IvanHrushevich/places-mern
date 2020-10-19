@@ -4,8 +4,8 @@ import UserItem from '../UserItem/UserItem';
 import classes from './UserList.module.scss';
 import { Card } from '../../../shared/components';
 
-const UserList = ({ items }) => {
-  if (items.length === 0) {
+const UserList = (props) => {
+  if (props.items.length === 0) {
     return (
       <div className="center">
         <Card>
@@ -17,7 +17,7 @@ const UserList = ({ items }) => {
 
   return (
     <ul className={classes['users-list']}>
-      {items.map((user) => (
+      {props.items.map((user) => (
         <UserItem key={user.id} id={user.id} image={user.image} name={user.name} placeCount={user.places} />
       ))}
     </ul>

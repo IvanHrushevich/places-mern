@@ -2,10 +2,10 @@ import React from 'react';
 
 import './Avatar.scss';
 
-const Avatar = ({ className, style, image, alt, width }) => {
+const Avatar = (props) => {
   return (
-    <div className={`avatar ${className}`} style={style}>
-      <img src={image} alt={alt} style={{ width: width, height: width }} />
+    <div className={`avatar ${props.className}`} style={props.style}>
+      <img src={props.image} alt={props.alt} style={{ width: props.width, height: props.width }} />
     </div>
   );
 };
