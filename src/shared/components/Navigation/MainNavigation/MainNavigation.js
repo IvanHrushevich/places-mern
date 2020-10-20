@@ -10,15 +10,15 @@ import { Backdrop } from '../../UI';
 const MainNavigation = () => {
   const [drawerIsOpen, setDawerIsOpen] = useState(false);
 
-  const openDrawer = () => setDawerIsOpen(true);
-  const closeDrawer = () => setDawerIsOpen(false);
+  const openDrawerHandler = () => setDawerIsOpen(true);
+  const closeDrawerHandler = () => setDawerIsOpen(false);
 
   return (
     <>
       {drawerIsOpen && (
         <>
-          <Backdrop onClick={closeDrawer} />
-          <SideDrawer>
+          <Backdrop onClick={closeDrawerHandler} />
+          <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
             <nav className={classes['main-navigation__drawer-nav']}>
               <NavLinks />
             </nav>
@@ -26,7 +26,7 @@ const MainNavigation = () => {
         </>
       )}
       <MainHeader>
-        <button className={classes['main-navigation__menu-btn']} onClick={openDrawer}>
+        <button className={classes['main-navigation__menu-btn']} onClick={openDrawerHandler}>
           <span />
           <span />
           <span />
