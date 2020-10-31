@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import classes from './MainNavigation.module.scss';
+import './MainNavigation.css';
 import MainHeader from '../MainHeader/MainHeader';
 import NavLinks from '../NavLinks/NavLinks';
 import SideDrawer from '../SideDrawer/SideDrawer';
@@ -19,22 +19,22 @@ const MainNavigation = () => {
         <>
           <Backdrop onClick={closeDrawerHandler} />
           <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
-            <nav className={classes['main-navigation__drawer-nav']}>
+            <nav className="main-navigation__drawer-nav">
               <NavLinks />
             </nav>
           </SideDrawer>
         </>
       )}
       <MainHeader>
-        <button className={classes['main-navigation__menu-btn']} onClick={openDrawerHandler}>
+        <button className="main-navigation__menu-btn" onClick={openDrawerHandler}>
           <span />
           <span />
           <span />
         </button>
-        <h1 className={classes['main-navigation__title']}>
+        <h1 className="main-navigation__title">
           <Link to="/">Your places</Link>
         </h1>
-        <nav className={classes['main-navigation__header-nav']}>
+        <nav className="main-navigation__header-nav">
           <NavLinks />
         </nav>
       </MainHeader>

@@ -11,8 +11,8 @@ const PLACES = [
     imageUrl: 'https://blizko.by/ckeditor_assets/pictures/9659/content_stancija-metro-malinovka.jpg',
     address: 'Minsk',
     location: {
-      lat: 40,
-      lng: -73,
+      lat: 53.849723,
+      lng: 27.474662,
     },
     creator: 'u1',
   },

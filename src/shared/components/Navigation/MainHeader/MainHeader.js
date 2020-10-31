@@ -1,7 +1,7 @@
 import React from 'react';
 
-import classes from './MainHeader.module.scss';
+import './MainHeader.css';
 
-const MainHeader = (props) => <header className={classes['main-header']}>{props.children}</header>;
+const MainHeader = (props) => <header className="main-header">{props.children}</header>;
 
 export default MainHeader;

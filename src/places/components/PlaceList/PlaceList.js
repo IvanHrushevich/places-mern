@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { Card } from '../../../shared/components/UI';
-import classes from './PlaceList.module.scss';
+import './PlaceList.css';
 import PlaceItem from '../PlaceItem/PlaceItem';
 
 const PlaceList = (props) => {
   if (props.items.length === 0) {
     return (
-      <div className={`${classes['place-list']} center`}>
+      <div className="place-list center">
         <Card>
           <h2>No places found. Create one?</h2>
           <button>Share Place</button>
@@ -16,7 +16,7 @@ const PlaceList = (props) => {
     );
   } else {
     return (
-      <ul className={classes['place-list']}>
+      <ul className="place-list">
         {props.items.map((place) => (
           <PlaceItem
             key={place.id}
