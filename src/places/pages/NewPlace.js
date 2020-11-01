@@ -1,5 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const NewPlace = () => <h2>NewPlace</h2>;
+import './NewPlace.css';
+import { Input } from '../../shared/components';
+
+const NewPlace = () => (
+  <form className="place-form">
+    <Input element="input" />
+  </form>
+);
 
 export default NewPlace;
