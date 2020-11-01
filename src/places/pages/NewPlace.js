@@ -5,7 +5,7 @@ import { Input } from '../../shared/components';
 
 const NewPlace = () => (
   <form className="place-form">
-    <Input element="input" />
+    <Input element="input" type="text" label="Title" validators={[]} errorText="Please enter a valid title." />
   </form>
 );
 
